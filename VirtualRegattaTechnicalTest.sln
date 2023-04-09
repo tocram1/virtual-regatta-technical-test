@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServicesAPI", "GameServicesAPI\GameServicesAPI.csproj", "{EDE78B8E-21E7-44CA-8859-5A89F84BFFA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameSilos", "GameSilos\GameSilos.csproj", "{26ABE7AA-5127-4661-B340-86F14637A097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{4C49778C-F230-4130-89B9-394F2548CA71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDE78B8E-21E7-44CA-8859-5A89F84BFFA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE78B8E-21E7-44CA-8859-5A89F84BFFA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE78B8E-21E7-44CA-8859-5A89F84BFFA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE78B8E-21E7-44CA-8859-5A89F84BFFA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26ABE7AA-5127-4661-B340-86F14637A097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26ABE7AA-5127-4661-B340-86F14637A097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26ABE7AA-5127-4661-B340-86F14637A097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26ABE7AA-5127-4661-B340-86F14637A097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C49778C-F230-4130-89B9-394F2548CA71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C49778C-F230-4130-89B9-394F2548CA71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C49778C-F230-4130-89B9-394F2548CA71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C49778C-F230-4130-89B9-394F2548CA71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
