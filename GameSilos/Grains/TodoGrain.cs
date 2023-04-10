@@ -31,6 +31,36 @@ public class TodoGrain : Grain, ITodoGrain
             GrainType, GrainKey, item);
     }
 
+    public Task RemoveAsync(Guid itemKey)
+    {
+        if (_state.State.Item?.Key == itemKey)
+        {
+            _state.State.Item = null;
+            return _state.WriteStateAsync();
+        }
+        return Task.CompletedTask;
+    }
+
+    public async Task ClearAsync(Guid userKey)
+    {
+        if (_state.State.Item?.OwnerKey == userKey)
+        {
+            _state.State.Item = null;
+            await _state.WriteStateAsync();
+        }
+    }
+
+    // fetch and return list of all items of the grain
+    public Task<List<TodoItem>> GetAllAsync()
+    {
+        var items = new List<TodoItem>();
+        if (_state.State.Item is not null)
+        {
+            items.Add(_state.State.Item);
+        }
+        return Task.FromResult(items);
+    }
+
     [GenerateSerializer]
     public class State
     {
